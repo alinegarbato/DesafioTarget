@@ -1,1 +1,36 @@
+## Exercício:
 
+Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado:
+
+SP – R$67.836,43
+RJ – R$36.678,66
+MG – R$29.229,88
+ES – R$27.165,48
+Outros – R$19.849,53
+
+Escreva um programa na linguagem que desejar onde calcule o percentual de representação que cada estado teve dentro do valor total mensal da distribuidora.
+ 
+
+### Resposta:
+
+sp = float(67.83643)
+rj = float(36.67866)
+mg = float(29.22988)
+es = float(27.16548)
+outros = float(19.84953)
+total = float(sp + rj + mg + es + out)
+
+
+print(total)
+
+percentualSp = ((sp/total)*100)
+percentualRj = ((rj/total)*100)
+percentualMg = ((mg/total)*100)
+percentualEs = ((es/total)*100)
+percentualOutros = ((out/total)*100)
+
+print('Porcentagem de SP {}'.format(percentualSp))
+print('Porcentagem de RJ {}'.format(percentualRj))
+print('Porcentagem de MG {}'.format(percentualMg))
+print('Porcentagem de ES {}'.format(percentualEs))
+print('Porcentagem de OUTROS {}'.format(percentualOutros))
